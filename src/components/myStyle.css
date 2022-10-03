@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 50vw;
+  height: 100vh;
+  /* background-color: aquamarine; */
+  /* position: relative; */
+  margin: 50px auto 0px;
+}
+.add {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(187, 182, 182);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.add_text {
+  flex: 60%;
+  width: 70%;
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid transparent;
+  outline: none;
+}
+/* .add_btn {
+  outline: none;
+  flex: 20%;
+  font-size: 18px;
+  border: 1px solid transparent;
+  background-color: pink;
+} */
+.add p {
+  flex: 100%;
+  font-size: 20px;
+  padding: 10px;
+}
+ul {
+  list-style: none;
+  font-size: 16px;
+}
+li {
+  box-sizing: border-box;
+  padding: 0px 0px 0px 10px;
+  position: relative;
+  /* padding: 10px; */
+  cursor: pointer;
+}
+li:nth-child(even) {
+  background-color: rgb(232, 226, 226);
+}
+li:nth-child(odd) {
+  background-color: white;
+}
+li:hover {
+  background-color: rgb(206, 205, 205);
+}
+ion-icon {
+  font-size: 20px;
+}
+.list_cross,
+.done_list {
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 10px 16px;
+  color: black;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.list_cross:hover,
+.done_list:hover {
+  background-color: pink;
+}
+.btns {
+  display: flex;
+}
+
+.customBtn {
+  padding: 10px 16px;
+  color: black;
+  background-color: pink;
+  border: 1px solid transparent;
+  cursor: pointer;
+  width: 15rem;
+  height: 4rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+li.check {
+  background-color: grey;
+
+  text-decoration: line-through;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.list_text {
+  font-size: 18px;
+}
+.todo_list {
+  width: 100%;
+  overflow-y: auto;
+  height: 40vh;
+}
