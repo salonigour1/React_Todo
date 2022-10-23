@@ -5,7 +5,7 @@ function Navbar2() {
   const handleLogout = () => {
     const login = { login: false };
     localStorage.setItem("currentLog", JSON.stringify(login));
-    const data = JSON.parse(localStorage.getItem("currentLog")) || [];
+    const data = JSON.parse(localStorage.removeItem("currentLog"));
   };
   return (
     <div className="navbar">
