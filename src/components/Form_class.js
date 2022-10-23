@@ -17,7 +17,7 @@ export class Form extends Component {
     });
   }
 
-  addBtn = (event) => {
+  handleSubmit = (event) => {
     event.preventDefault();
     let { input_text, items } = this.state;
     if (input_text === "") {
@@ -56,6 +56,7 @@ export class Form extends Component {
       items: todo,
     });
   };
+
   deleteItem = (index) => {
     const todo = JSON.parse(localStorage.getItem("localItems")) || [];
     todo.splice(index, 1);
@@ -64,12 +65,14 @@ export class Form extends Component {
       items: todo,
     });
   };
+
   deleteAll = () => {
     localStorage.clear();
     this.setState({
       items: [],
     });
   };
+
   render() {
     const { items, input_text } = this.state;
     return (
