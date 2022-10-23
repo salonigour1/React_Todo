@@ -9,9 +9,6 @@ function LoginForm() {
     const data = JSON.parse(localStorage.getItem("currentLog")) || [];
     console.log(data.login);
   };
-  useEffect(() => {
-    console.log("yes");
-  });
 
   return (
     <div className="login">

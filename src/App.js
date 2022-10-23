@@ -19,8 +19,8 @@ function App() {
     const login = { login: false };
     localStorage.setItem("currentLog", JSON.stringify(login));
     // setLog(JSON.parse(localStorage.getItem("currentLog")).login);
-    console.log("effect");
-  }, [JSON.parse(localStorage.getItem("currentLog")).login]);
+    // console.log("effect");
+  });
 
   return (
     <div>
